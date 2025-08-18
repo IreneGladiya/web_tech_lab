@@ -1,0 +1,43 @@
+.japanese {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background-color: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px gray;
+}
+
+.japanese img {
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.japanese-text {
+  font-family: "Trebuchet MS", sans-serif;
+  color: #0d47a1;
+}
+
+.japanese-text h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Button styling */
+.japanese-btn {
+  display: inline-block;
+  background-color: #0d47a1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.japanese-btn:visited {
+  color: white;   /* visited link */
+}
+.japanese-btn:active {
+  color: yellow;  /* when clicking */
+}

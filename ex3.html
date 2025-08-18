@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuisines of Asia</title>
+  <link rel="stylesheet" href="style.css"> <!-- External CSS for Japanese -->
+  
+  <!-- Internal CSS for Chinese -->
+  <style>
+    .chinese {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      background-color: #fff3e0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px gray;
+    }
+    .chinese img {
+      width: 200px;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    .chinese-text {
+      font-family: "Georgia", serif;
+      color: #d35400;
+    }
+    .chinese-text h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    
+  .chinese-text a {
+    color: white;            /* like vlink="green" */
+  }
+  .chinese-text a:active {
+    color: yellow;           /* like alink="yellow" */
+  }
+
+  /* Make link look like a button */
+  .chinese-text a {
+    display: inline-block;
+    background-color: #d35400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  </style>
+</head>
+<body style="font-family: Arial, sans-serif; background: #fafafa; margin: 40px;">
+
+  <!-- Thai Cuisine (INLINE CSS) -->
+  <body style="font-family: Arial, sans-serif; background: #fafafa; margin: 40px;" link="red" alink="yellow" vlink="green">
+
+  <div style="display: flex; align-items: center; margin: 20px; background-color: #e8f5e9; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 6px gray;">
+    <img src="thai.jpg" alt="Thai Cuisine" style="width:200px; border-radius:10px; margin-right:20px;">
+    <div style="color: #1b5e20; font-family: 'Verdana', sans-serif;">
+      <h2 style="margin:0;">Thai Cuisine</h2>
+      <p>
+        Thai cuisine is famous for its balance of sweet, sour, salty, and spicy flavors. 
+        With roots in Southeast Asian traditions, it often features rice, noodles, herbs, and fresh vegetables.
+      </p>
+
+      <!-- Button acting as a link -->
+      <a href="https://www.tripadvisor.in/Restaurants-g304556-c39-Chennai_Madras_Chennai_District_Tamil_Nadu.html" target="_blank">
+        <button style="display:inline-block; padding:10px 20px; background-color:#1b5e20; color:white; text-decoration:none; border-radius:5px; font-weight:bold;"
+        onmousedown="this.style.color='yellow'" onclick="this.style.color='white'">Explore Thai Restaurants in Chennai
+        </button>
+      </a>
+    </div>
+  </div>
+
+</body>
+
+
+  <!-- Chinese Cuisine (INTERNAL CSS) -->
+  <div class="chinese">
+  <img src="chinese.jpg" alt="Chinese Cuisine">
+  <div class="chinese-text">
+    <h2>Chinese Cuisine</h2>
+    <p>
+      Chinese cuisine is one of the oldest in the world, with a rich history spanning thousands of years. 
+      It emphasizes harmony in taste, texture, and color, with famous dishes like dim sum, noodles, and Peking duck.
+    </p>
+
+    <!-- Button acting as link -->
+    <a href="https://www.tripadvisor.in/Restaurants-g304556-c11-Chennai_Madras_Chennai_District_Tamil_Nadu.html" target="_blank">
+      Explore Chinese Restaurants in Chennai
+    </a>
+  </div>
+</div>
+
+  <!-- Japanese Cuisine (EXTERNAL CSS) -->
+  <div class="japanese">
+    <img src="japanese.jpg" alt="Japanese Cuisine">
+    <div class="japanese-text">
+      <h2>Japanese Cuisine</h2>
+      <p>Japanese cuisine highlights simplicity and seasonality. Sushi, sashimi, ramen, and tempura are globally popular, while the use of fresh seafood, rice, and vegetables creates a unique and healthy tradition.</p>
+      <a href="https://www.tripadvisor.in/Restaurants-g304556-c27-Chennai_Madras_Chennai_District_Tamil_Nadu.html" target="_blank" class="japanese-btn">
+      Explore Japanese Restaurants in Chennai
+    </a>
+    </div>
+  </div>
+
+</body>
+</html>
